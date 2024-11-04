@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array of Objects</title>
+  </head>
+  <body>
+    <div id="info">
+      <p><b>Name :</b> Tushar Birajdar</p>
+      <p><b>Roll no. :</b> 42311</p>
+      <p><b>Batch :</b> R - 7</p>
+    </div>
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;">
+        
+      <h1>Array of Objects</h1>
+      <label for="arraySize">Enter the size of the Array:</label>
+      <input type="number" id="arraySize" placeholder="Size of the Array" />
+      <br /><br />
+
+      <label for="addObject">Enter the Object:</label>
+      <input type="text" id="addObject" placeholder="Enter Object" />
+      <button onclick="addToArray()">Add</button>
+      <p id="ans"></p>
+
+      <label for="checkObject">Find Array in the Array of Object:</label>
+      <input
+        type="text"
+        id="checkObject"
+        placeholder="Enter Index of the Array"
+      />
+      <button onclick="checkObject()">Check</button>
+      <p id="array"></p>
+
+      <h3>Current Array:</h3>
+      <p id="arrayDisplay"></p>
+      <script src="Exp_7.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array of Objects</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array of Objects</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .container > * {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Array of Objects</h1>
+
+        <label for="arraySize">Enter the size of the Array:</label>
+        <input type="number" id="arraySize" placeholder="Size of the Array">
+
+        <label for="addObject">Enter the Object (JSON format):</label>
+        <input type="text" id="addObject" placeholder="Enter Object">
+        <button onclick="addToArray()">Add</button>
+
+        <label for="checkObject">Check if the value at index is an Array:</label>
+        <input type="number" id="checkObject" placeholder="Enter Index of the Array">
+        <button onclick="checkObject()">Check</button>
+
+        <h3>Results:</h3>
+        <p id="ans"></p>
+        <p id="array"></p>
+
+        <h3>Current Array:</h3>
+        <p id="arrayDisplay"></p>
+
+        <button onclick="resetFields()">Reset</button>
+    </div>
+
+    <script src="Exp7.js"></script>
+</body>
+
+</html>
+
